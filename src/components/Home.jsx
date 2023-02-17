@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/users")
+      .get("https://react-task-backend-seven.vercel.app/users")
       .then((response) => response.data)
       .then((json) => setUsersData(json))
       .catch((err) => console.log(err));
